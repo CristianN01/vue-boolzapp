@@ -12,25 +12,22 @@ body{
 }
 
 .green{
-    height: 125px;
+    height: 120px;
     background-color: #009688;
 }
 
 .white{
     background-color: #cdcdc7;
-    height: 100vh;
+    height:100vh;
 }
 
 .container-flex{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.192);
     max-width: 1400px;
     z-index: 1;
     bottom: 6rem;
     position: relative;
     
-    
-
 }
 
 /* sidebar */
@@ -43,7 +40,6 @@ body{
 div.profile {
     display: flex;
     background-color: #eaeaea;
-    border-right: 2px solid #dbdbdb;
 }
 
 div.profile img,
@@ -113,7 +109,7 @@ div.searchbar {
     background-color: #fafafa;
 }
 
-div.search-icon,
+
 div.search {
     margin: 0;
     padding: 0.25rem;
@@ -132,15 +128,6 @@ div.search i {
     color: #b2b3b6;
 }
 
-div.search-icon {
-    margin: 1rem 2rem;
-    text-align: center;
-    align-self: center;
-    border: 1px solid #d6d6d6;
-    
-}
-
-
 div.search input {
     width: 100%;
     font-size: 12px;
@@ -148,11 +135,17 @@ div.search input {
     background-color: #ffffff;
 }
 
+/* fine searchbar */
+
+/* --------------------------------------- */
+
 /* sidebar contacts */
 
+div.contacts-container {
+    overflow-y: scroll;
+    height: 622px; 
+}
 
-
-/* fine sidebar contacts */
 section.contacts {
     display: flex;
     background-color: #ffffff;
@@ -181,11 +174,79 @@ section.contacts span p {
     font-size: 11px;
     color: #c0bcbe;
 }
+/* fine sidebar contacts */
 
 /* fine sidebar */
 
+/* --------------------------------------- */
 
+/* pagina chat */
 
 .pagina-chat{
     width: 1000px;
 }
+
+div.profile-messager {
+    border-left: 2px solid #dbdbdb;
+    display: flex;
+    background-color: #eaeaea;
+}
+
+div.profile-messager img {
+    height: 50px;
+    margin: 1rem;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    margin: 0.50rem;
+    
+}
+
+div.profile-messager span {
+    text-align: center;
+    align-self: center;
+    margin: 0;
+}
+
+section.chat {
+    background-image: url(../img/mine.jpg);
+    height:669px;
+    overflow-y: scroll;
+}
+
+/* type a massage */
+
+div.text-send {
+    display: flex;
+    background-color: #f3eeea;
+}
+
+
+div.type-message {
+    margin: 0;
+    padding: 0.50rem;
+    width: 100%;
+    display: flex;
+    
+}
+
+div.type-message i {
+    margin: 0.75rem 1.25rem;
+    color: #b2b3b6;
+    font-size: 1.5rem;
+}
+
+div.type-message input {
+    width: 100%;
+    font-size: 12px;
+    border: 1px solid #f6f6f6;
+    background-color: #ffffff;
+    border-radius: 0.50rem;
+
+}
+
+
+
+
+/* fine pagina chat */
+
+

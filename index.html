@@ -42,18 +42,38 @@
                             <input type="text" placeholder=" Cerca o inizia una nuova chat">
                         </div>
                     </div>
-                    <section class="contacts" v-for="(item, index) in contacts" :key="index">
-                            <img :src="item.avatar + '.jpg'" alt="">
-                            <span>{{item.name}}<p>Ultimo messaggio inviato</p></span>
-                            <div class="time">
-                                <p>12:00</p>
-                            </div>
-
-                    </section>
+                    <div class="contacts-container">
+                        <section class="contacts" v-for="(item, index) in contacts" :key="index">
+                                <img :src="item.avatar + '.jpg'" alt="">
+                                <span>{{item.name}}<p>Ultimo messaggio inviato</p></span>
+                                <div class="time">
+                                    <p>12:00</p>
+                                </div>
+                        </section>
+                    </div>
                 </article>
+
     
                 <article class="pagina-chat">
-    
+                    <div class="profile-messager">
+                        <img :src="myProfile.avatar" alt="avatar">
+                        <span>{{ myProfile.name }}</span>
+                        
+                        <div class="activities">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-paperclip"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <section class="chat">
+
+                    </section>
+                    <div class="text-send">
+                        <div class="type-message">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <input type="text" placeholder="  Scrivi un messagggio">
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
                 </article>
             </section>
         </div>
