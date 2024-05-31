@@ -24,7 +24,7 @@ body{
 .container-flex{
     display: flex;
     background-color: rgba(0, 0, 0, 0.192);
-    max-width: 1500px;
+    max-width: 1400px;
     z-index: 1;
     bottom: 6rem;
     position: relative;
@@ -33,10 +33,158 @@ body{
 
 }
 
-.contatti{
+/* sidebar */
+
+.sidebar{
     height: 800px;
-    width: 1200px;
+    width: 500px;
 }
+
+div.profile {
+    display: flex;
+    background-color: #eaeaea;
+    border-right: 2px solid #dbdbdb;
+}
+
+div.profile img,
+section.contacts img{
+    height: 50px;
+    margin: 1rem;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    margin: 0.50rem;
+    
+}
+
+div.profile span {
+    text-align: center;
+    align-self: center;
+    margin: 0;
+}
+
+div.activities {
+    text-align: center;
+    align-self: center;
+    margin-right: 0;
+}
+
+div.activities i {
+    margin-right: 1rem;
+    color: #afb1b3;
+}
+
+/* notification bell */
+
+div.notifications-allow {
+    background-color: #8edafc;
+    display: flex;
+    padding: 0.50rem 0;
+}
+
+div.notifications-allow i {
+    margin: 0.50rem;
+    padding: 0.75rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 1rem;
+    color: #8edafc;
+    
+    
+}
+
+div.notifications-allow span {
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+div.notifications-allow p {
+    margin-right: 4rem;
+    font-size: 13px;
+}
+
+/* fine notification bell */
+
+/* searchbar */
+
+div.searchbar {
+    display: flex;
+    background-color: #fafafa;
+}
+
+div.search-icon,
+div.search {
+    margin: 0;
+    padding: 0.25rem;
+}
+
+div.search {
+    width: 100%;
+    display: flex;
+    padding: 0.25rem;
+}
+
+div.search i {
+    padding: 0.40rem 1.5rem;
+    border: 1px solid #f6f6f6;
+    background-color: #ffffff;
+    color: #b2b3b6;
+}
+
+div.search-icon {
+    margin: 1rem 2rem;
+    text-align: center;
+    align-self: center;
+    border: 1px solid #d6d6d6;
+    
+}
+
+
+div.search input {
+    width: 100%;
+    font-size: 12px;
+    border: 1px solid #f6f6f6;
+    background-color: #ffffff;
+}
+
+/* sidebar contacts */
+
+
+
+/* fine sidebar contacts */
+section.contacts {
+    display: flex;
+    background-color: #ffffff;
+    border-top: 2px solid #f9f9f9;
+    padding: 0.50rem 0;
+    justify-content: space-between;
+}
+
+section.contacts  div.time {
+    margin-right: 1rem;
+    font-size: 11px;
+    color: #d1c6c2;
+}
+
+section.contacts:hover {
+    background-color: #ffffffbc;
+}
+
+section.contacts span {
+    align-self: start;
+    margin: 0 0.50rem;
+    font-size: 16px;
+}
+
+section.contacts span p {
+    font-size: 11px;
+    color: #c0bcbe;
+}
+
+/* fine sidebar */
+
+
 
 .pagina-chat{
     width: 1000px;

@@ -15,19 +15,48 @@
 </head>
 <body>
     <section class="white">
-        <div id="app">
-            <section class="container-flex">
-                <div class="contatti">
-    
-                </div>
-    
-                <div class="pagina-chat">
-    
-                </div>
-            </section>
-        </div>
         <section class="green">
     </section>
+        <div id="app">
+            <section class="container-flex">
+                <article class="sidebar">
+                    <div class="profile">
+                        <img :src="myProfile.avatar" alt="avatar">
+                        <span>{{ myProfile.name }}</span>
+                        
+                        <div class="activities">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="notifications-allow">
+                        <i class="fa-solid fa-bell-slash"></i>
+                        <span>Ricevi notifiche di nuovi messaggi<a href=""><p>Attiva notifiche desktop </p></a></span>
+                        
+                    </div>
+
+                    <div class="searchbar">
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder=" Cerca o inizia una nuova chat">
+                        </div>
+                    </div>
+                    <section class="contacts" v-for="(item, index) in contacts" :key="index">
+                            <img :src="item.avatar + '.jpg'" alt="">
+                            <span>{{item.name}}<p>Ultimo messaggio inviato</p></span>
+                            <div class="time">
+                                <p>12:00</p>
+                            </div>
+
+                    </section>
+                </article>
+    
+                <article class="pagina-chat">
+    
+                </article>
+            </section>
+        </div>
 
     </section>
 
