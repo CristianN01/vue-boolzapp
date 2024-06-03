@@ -244,6 +244,8 @@ div.type-message input {
 
 }
 
+/* zona conversazione */
+
 .chat {
     padding: 4rem;
     display: flex;
@@ -274,6 +276,8 @@ div.type-message input {
 .received {
     background-color: #ffffff;
 }
+
+/* fine conversazione */
 
 
 

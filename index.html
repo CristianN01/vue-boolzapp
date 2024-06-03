@@ -66,8 +66,8 @@
                         </div>
                     </div>
                     <section class="chat">
-                        <article class="sent-message sent">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <article class="sent-message" v-for="(chat, index) in contacts.messages" :key="chat.message">
+                            <p :class="(chat.sent === true) ? 'sent' : '' ">{{chat.message}}</p>
                         </article>
                         <article class="recived-message received">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
