@@ -176,8 +176,9 @@ const { createApp } = Vue
     },
     methods: {
         changeChat: function(chatIndex) {
-            this.currentContactProfile = slideIndex;
-
+            this.currentContactProfile = chatIndex;
+            console.log(this.currentContactProfile)
+            
     }
     }
   }).mount('#app')

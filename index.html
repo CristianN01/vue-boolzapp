@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="contacts-container">
-                        <section class="contacts" v-for="(item, index) in contacts" :key="index" @click="changeChat(2)">
+                        <section class="contacts" v-for="(item, index) in contacts" :key="index" @click="changeChat(index)">
                                 <img :src="item.avatar + '.jpg'" alt="">
                                 <span>{{item.name}}<p>Ultimo messaggio inviato</p></span>
                                 <div class="time">
@@ -57,7 +57,7 @@
                 <article class="pagina-chat">
                     <div class="profile-messager" v-for="(profile, index) in contacts" :key="index" v-show="index === currentContactProfile">
                         <img :src="profile.avatar + '.jpg'" alt="avatar">
-                        <span> Michele </span>
+                        <span> {{profile.name}} </span>
                         
                         <div class="activities">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -67,11 +67,15 @@
                     </div>
                     <section class="chat">
                         <article class="sent-message" v-for="message in contacts">
-                            <div class="message" v-for="mymessage in message.messages">
-                                <p v-show="mymessage.messages === sent">{{mymessage.message}}</p>
+                            <div class="message">
+                                 {{message.message}}
                             </div>
                         </article>
-                        <article class="recived-message">
+                        <article class="recived-message" v-for="message in contacts">
+                            <div class="message">
+                                {{message.message}}
+                            </div>
+
                         </article>
                     </section>
                     <div class="text-send">
