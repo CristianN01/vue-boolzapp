@@ -66,11 +66,12 @@
                         </div>
                     </div>
                     <section class="chat">
-                        <article class="sent-message" v-for="(chat, index) in contacts.messages" :key="chat.message">
-                            <p :class="(chat.sent === true) ? 'sent' : '' ">{{chat.message}}</p>
+                        <article class="sent-message" v-for="message in contacts">
+                            <div class="message" v-for="mymessage in message.messages">
+                                <p v-show="mymessage.messages === sent">{{mymessage.message}}</p>
+                            </div>
                         </article>
-                        <article class="recived-message received">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <article class="recived-message">
                         </article>
                     </section>
                     <div class="text-send">
