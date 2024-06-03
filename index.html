@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="contacts-container">
-                        <section class="contacts" v-for="(item, index) in contacts" :key="index">
+                        <section class="contacts" v-for="(item, index) in contacts" :key="index" @click="changeChat(2)">
                                 <img :src="item.avatar + '.jpg'" alt="">
                                 <span>{{item.name}}<p>Ultimo messaggio inviato</p></span>
                                 <div class="time">
@@ -55,9 +55,9 @@
 
     
                 <article class="pagina-chat">
-                    <div class="profile-messager">
-                        <img :src="myProfile.avatar" alt="avatar">
-                        <span>{{ myProfile.name }}</span>
+                    <div class="profile-messager" v-for="(profile, index) in contacts" :key="index" v-show="index === currentContactProfile">
+                        <img :src="profile.avatar + '.jpg'" alt="avatar">
+                        <span> Michele </span>
                         
                         <div class="activities">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -66,7 +66,12 @@
                         </div>
                     </div>
                     <section class="chat">
-
+                        <article class="sent-message sent">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </article>
+                        <article class="recived-message received">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </article>
                     </section>
                     <div class="text-send">
                         <div class="type-message">

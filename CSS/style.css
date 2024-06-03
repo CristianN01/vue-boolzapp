@@ -244,6 +244,37 @@ div.type-message input {
 
 }
 
+.chat {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sent-message {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: 0;
+    margin-bottom: 0.50rem;
+    align-self: self-end;
+}
+
+.recived-message {
+    align-self: self-start;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0.75rem;
+    margin-bottom: 0.50rem;
+}
+
+.sent {
+    background-color: #d5f9ba;
+}
+
+.received {
+    background-color: #ffffff;
+}
+
 
 
 
