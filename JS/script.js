@@ -171,14 +171,8 @@ const { createApp } = Vue
             avatar: './img/avatar_io.jpg'
         },
         currentContactProfile: 0,
-        
+        currentChat: 0,
       }
     },
-    methods: {
-        changeChat: function(chatIndex) {
-            this.currentContactProfile = chatIndex;
-            console.log(this.currentContactProfile)
-            
-    }
-    }
+    
   }).mount('#app')
