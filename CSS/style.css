@@ -254,24 +254,29 @@ div.type-message input {
 }
 
 .sent-message {
+    margin: 0;
+}
+
+.message {
     display: flex;
     flex-direction: column;
 }
 
 .sent {
-    align-self: self-end;
     background-color: #d5f9ba;
     padding: 1rem;
     border-radius: 0.75rem;
     margin-bottom: 0.50rem;
+    margin-right: 0;
+
 }
 
 .received {
-    align-self: self-start;
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 0.75rem;
     margin-bottom: 0.50rem;
+    margin-left: 0;
 }
 
 /* fine conversazione */

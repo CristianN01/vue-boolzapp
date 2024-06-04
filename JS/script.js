@@ -170,7 +170,6 @@ const { createApp } = Vue
             name: 'Cristian',
             avatar: './img/avatar_io.jpg'
         },
-        currentContactProfile: 0,
         currentChat: 0,
       }
     },
