@@ -39,11 +39,11 @@
                     <div class="searchbar">
                         <div class="search">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder=" Cerca o inizia una nuova chat">
+                            <input type="text" placeholder=" Cerca o inizia una nuova chat" v-model="searchType">
                         </div>
                     </div>
                     <div class="contacts-container">
-                        <section class="contacts" v-for="(item, index) in contacts" :key="index" @click="currentChat=(index)">
+                        <section class="contacts" v-for="(item, index) in contacts" :key="index" @click="currentChat=(index)" v-show="contactsSearch(item.name)">
                                 <img :src="item.avatar + '.jpg'" alt="">
                                 <span>{{item.name}}<p>Ultimo messaggio inviato</p></span>
                                 <div class="time">

@@ -171,6 +171,7 @@ const { createApp } = Vue
             avatar: './img/avatar_io.jpg'
         },
         currentChat: 0,
+        searchType: '',
         newMessageInput: '',
         newMessageResponse: {
             massage: 'OK!!',
@@ -200,7 +201,13 @@ const { createApp } = Vue
         clearItemInput() {
             this.newMessageInput = '';
         },
-        
+        contactsSearch: function(contacts) {
+           if (this.searchType == contacts) {
+            return true;
+           } else {
+            return false;
+           }
+        }
           
         
         
