@@ -172,6 +172,10 @@ const { createApp } = Vue
         },
         currentChat: 0,
         newMessageInput: '',
+        newMessageResponse: {
+            massage: 'OK!!',
+            status: 'recived'
+        }
       }
     },
     methods: {
@@ -183,10 +187,23 @@ const { createApp } = Vue
             }
             this.contacts[this.currentChat].messages.push(newMessage);
             this.clearItemInput();
+            setTimeout(() => {
+                const newMessageResponse = {
+                    message: 'OK!!',
+                    status: 'received',
+        
+                }
+                this.contacts[this.currentChat].messages.push(newMessageResponse);
+
+              }, 1000);
         },
         clearItemInput() {
             this.newMessageInput = '';
-        }
+        },
+        
+          
+        
+        
     }
     
   }).mount('#app')

@@ -268,6 +268,7 @@ div.type-message input {
     border-radius: 0.75rem;
     margin-bottom: 0.50rem;
     margin-right: 0;
+    width: 40%;
 
 }
 
@@ -277,6 +278,7 @@ div.type-message input {
     border-radius: 0.75rem;
     margin-bottom: 0.50rem;
     margin-left: 0;
+    width: 40%;
 }
 
 /* fine conversazione */

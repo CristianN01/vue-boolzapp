@@ -70,12 +70,13 @@
                             <div class="message" v-for="(sentMessage, index) in contacts[currentChat].messages" :key="index">
                                 <div :class="sentMessage.status" >
                                     {{sentMessage.message}}
+
                                 </div> 
                             </div>
                         </article>
                         <article class="recived-message" v-for="message in contacts">
                             <div class="message">
-                            
+                                
                             </div>
 
                         </article>
