@@ -171,7 +171,22 @@ const { createApp } = Vue
             avatar: './img/avatar_io.jpg'
         },
         currentChat: 0,
+        newMessageInput: '',
       }
     },
+    methods: {
+        addNewMessage: function(newContentMessage) {
+            const newMessage = {
+                message: newContentMessage,
+                status: 'sent',
+    
+            }
+            this.contacts[this.currentChat].messages.push(newMessage);
+            this.clearItemInput();
+        },
+        clearItemInput() {
+            this.newMessageInput = '';
+        }
+    }
     
   }).mount('#app')
