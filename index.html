@@ -44,7 +44,7 @@
                     </div>
                     <div class="contacts-container">
                         <section class="contacts" v-for="(item, index) in contacts" :key="index" @click="currentChat=(index)" v-show="contactsSearch(item.name)">
-                                <img :src="item.avatar + '.jpg'" alt="">
+                            <img :src="item.avatar + '.jpg'" alt="">
                                 <span>{{item.name}}<p>Ultimo messaggio inviato</p></span>
                                 <div class="time">
                                     <p>12:00</p>

@@ -201,12 +201,20 @@ const { createApp } = Vue
         clearItemInput() {
             this.newMessageInput = '';
         },
-        contactsSearch: function(contacts) {
-           if (this.searchType == contacts) {
-            return true;
-           } else {
-            return false;
-           }
+        contactsSearch: function(contactName) {
+        //    if (this.searchType == this.searchType) {
+        //     return contacts;
+        //    } else if (this.searchType == contacts) {
+        //     return true;
+        //    } 
+            if (this.searchType == '') {
+                return true;
+            } else if (this.searchType == contactName){ return true;
+
+            } else {
+                return false;
+            }
+            
         }
           
         
